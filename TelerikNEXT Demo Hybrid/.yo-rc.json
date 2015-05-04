@@ -1,0 +1,16 @@
+{
+  "dependsOn": [
+    "generator-kendo-ui-mobile@0.0.6"
+  ],
+  "generator-kendo-ui-mobile": {
+    "cleanup": [
+      "./data/defaultProvider.js",
+      "./home",
+      "./registerView",
+      "./dataListView",
+      "./formView",
+      "./aboutView",
+      "./data/northwind.js"
+    ]
+  }
+}

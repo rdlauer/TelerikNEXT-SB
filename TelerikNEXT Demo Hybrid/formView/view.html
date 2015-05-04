@@ -1,0 +1,23 @@
+<div data-role="view" data-title="Form" data-layout="main" data-model="app.formView" data-show="app.formView.onShow">
+    <div id="formViewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Switch
+                        <input data-bind="value: formViewModel.fields.switch" data-role="switch">
+                    </label>
+                </li>
+                <li>
+                    <label>Password
+                        <input data-bind="value: formViewModel.fields.password" placeholder="******" type="password">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: formViewModel.cancel }">Cancel</a>
+                <a class="km-state-active" data-role="button" data-bind="events: { click: formViewModel.submit }">Confirm</a>
+            </div>
+        </form>
+    </div>
+</div>
